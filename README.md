@@ -19,5 +19,17 @@ Go to localhost:3000
 - Vanila Javascript
 - [Third Party API](https://www.boredapi.com/) for the challenge page and [Socket.io](https://socket.io/) for real-time event based communication
 
+## How it works
+<img src='chatHealthChallenges1.png' alt='Chat room options'>
+<br>
+- Users can navigate between rooms easily
+- Join chats with any name you like!
+<br><br>
+<img src='chatHealth1' alt='Challenges'>
+<br>
+- Users can choose a type of challenge and get a challenge back
+- Challenges range from simple things like organising your room to starting a blog or learning a new language
+- This data is pulled from Bored API
+
 ## Contact
 Jolene - [jolenechong7@gmail.com](mailto:jolenechong7@gmail.com) <br>
