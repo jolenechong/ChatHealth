@@ -4,7 +4,7 @@ Full-stack Realtime chat app with websockets using Node.js, Express and Socket.i
 Live site: https://chat-health.herokuapp.com/ <br>
 Source Code: https://github.com/jolenechong/ChatHealth <br>
 
-<img src='chatHealth.png' alt="screenshot of ChatHealth website">
+<img src='chatHealth.png' alt="screenshot of ChatHealth website"/>
 
 ## Usage
 ```
@@ -20,15 +20,15 @@ Go to localhost:3000
 - [Third Party API](https://www.boredapi.com/) for the challenge page and [Socket.io](https://socket.io/) for real-time event based communication
 
 ## How it works
-<img src='chatHealthChallenges1.png' alt='Chat room options'>
+<img src='chatHealthChallenges1.png' alt='Chat room options'/>
 <br>
-- Users can navigate between rooms easily
+- Users can navigate between rooms easily <br>
 - Join chats with any name you like!
 <br><br>
-<img src='chatHealth1.png' alt='Challenges Page'>
+<img src='chatHealth1.png' alt='Challenges Page'/>
 <br>
-- Users can choose a type of challenge and get a challenge back
-- Challenges range from simple things like organising your room to starting a blog or learning a new language
+- Users can choose a type of challenge and get a challenge back <br>
+- Challenges range from simple things like organising your room to starting a blog or learning a new language <br>
 - This data is pulled from Bored API
 
 ## Contact
