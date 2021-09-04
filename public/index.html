@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ChatHealth App</title>
+  </head>
+  <body>
+    <section id="chatSection">
+      <div class="join-container">
+        <header class="join-header">
+          <h1><i class="fas fa-heartbeat"></i> ChatHealth</h1>
+        </header>
+        <div class="join-main">
+          <form action="chat.html">
+            <div class="form-control">
+              <label for="username">Annonymous Name</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter username..."
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="room">Room</label>
+              <select name="room" id="room">
+                <option disabled>
+                  You might weant to get something off your chest:
+                </option>
+                <option value="Listen/Talk to Someone">Listen/Talk to Someone</option>
+                <option disabled>
+                  Or even talk to people with similar interests:
+                </option>
+                <option value="Cooking">Cooking</option>
+                <option value="School Life">School Life</option>
+                <option value="Computing">Computing</option>
+                <option value="History">History</option>
+                <option value="Reading">Reading</option>
+                <option value="Languages">Languages</option>
+                <option value="Movies">Movies</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Aviation">Aviation</option>
+                <option value="Sports">Sports</option>
+                <option value="Anime">Anime</option>
+                <option value="Theatre">Theatre</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Join Chat</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Helplines - Singapore</h2>
+        </div>
+        <div class="modal-body">
+          <p>National Care Hotline: 1800-202-6868 
+    (8am-12am daily, from 1 Sep 2020)
+          <ol style='margin-left: 10px;line-height: 1.6;margin:20px;'>
+              <li>Mental Well-being</li>
+              <ul>
+                  <li>Institute of Mental Health’s Mental Health Helpline (6389-2222)</li>
+                  <li>Samaritans of Singapore (1800-221-4444)</li>
+                  <li>Silver Ribbon Singapore (6385-3714)</li>
+              </ul>
+              <li>Marital and Parenting Issues</li>
+              <ul>
+                  <li>Community Psychology Hub’s Online Counselling platform</li>
+              </ul>
+              <li>Violence or Abuse</li>
+              <ul>
+                  <li>Big Love Child Protection Specialist Centre (6445-0400)</li>
+                  <li>HEART @ Fei Yue Child Protection Specialist Centre (6819-9170)</li>
+                  <li>PAVE Integrated Services for Individual and Family Protection (6555-0390)</li>
+                  <li>Project StART (6476-1482)</li>
+                  <li>TRANS SAFE Centre (6449-9088)</li>
+              </ul>
+              <li>Councelling</li>
+              <ul>
+                  <li>TOUCHline (Counselling) – 1800 377 2252</li>
+              </ul>
+          </ol>
+          A useful chatbot: <a href='https://www.ncss.gov.sg/our-initiatives/beyond-the-label/belle-beyond-the-label-helpbot#'>Belle Chatbot</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>About Us</h2>
+        </div>
+        <div class="modal-body">
+          <p>ChatHealth was created to bring help people struggling with mental health issues or even people struggling with managing their emotional/mental well-being in general. We do this by allowing users to chat freely with other users on this webapp , allowing users to rant anonymously when they are not comfortable talking to their loved ones about it, or also talk to others about topics of interest to boost their mood.
+            There are also additional Challenges that users can take on to keep themselves occupied or even allow them to find new interests.
+            
+              <br><br>
+              For more details and future updates, feel free to visit our github repo <a href=""target="_blank">here</a>
+              <br><br>
+              ChatHealth is an <a href='' target="_blank">open-source project</a> built by <a href='https://jolenechong.github.io'  target="_blank">Jolene</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section for other options -->
+    <div id="menu"  onclick="openMenu()">
+      <i class="fas fa-ellipsis-v" id="mainMenu"></i>
+      <div id="menuContainer">
+        <a href="challenge.html" class="tooltip"
+          ><i id="challenge" class="fas fa-feather-alt menuOptions"></i>
+          <span class="tooltiptext">Challenges</span></a
+        >
+        <a href="index.html" class="tooltip"
+          ><i id="chat" class="far fa-comments menuOptions"></i
+        ><span class="tooltiptext">Chat Annonymously</span></a>
+
+        <div class="tooltip"><i id="helplines" class="fas fa-comment-medical menuOptions"></i><span class="tooltiptext">Helplines</span></div>
+        <div class="tooltip"><i id="about" class="fas fas fa-heartbeat menuOptions"></i><span class="tooltiptext">About Us</span></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      // FOR MODAL ON MENU (HELPLINES)
+      var displayHelp = document.getElementById("myModal");
+        var openHelp = document.getElementById("helplines");
+        var closeHelp = document.getElementsByClassName("close")[0];
+
+        openHelp.onclick = function() {
+            displayHelp.style.display = "block";
+        }
+
+        closeHelp.onclick = function() {
+            displayHelp.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it (for both modals)
+        window.onclick = function(event) {
+        if (event.target == displayHelp) {
+            displayHelp.style.display = "none";
+        }
+        else if(event.target == openAbout) {
+            openAbout.style.display = "none";
+        }
+        }
+
+        
+        // FOR MODAL ON MENU (ABOUT)
+        var openAbout = document.getElementById("myModal1");
+        var about = document.getElementById("about");
+        var closeAbout = document.getElementsByClassName("close")[1];
+
+        about.onclick = function() {
+            openAbout.style.display = "block";
+        }
+
+        closeAbout.onclick = function() {
+            openAbout.style.display = "none";
+        }
+    </script>
+  </body>
+</html>

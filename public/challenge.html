@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges | ChatHealth</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <style>
+        #challenges .card{
+            background-color: #f5f5f5;
+            color: #082032;
+            border-radius: 20px;
+            padding: 10px;
+            max-width: 400px;
+            margin-top: 50px;
+        }
+        #challenges button{
+            padding: 12px 8px;
+            background-color: black;
+            color: white;
+            border-radius: none;
+            outline: none;
+        }
+        #challenges .card h1{
+            color: #FF4C29;
+            padding: 10px;
+        }
+        
+        #challenges{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: var(--bg-color);
+        }
+
+        #challenges .card p{
+            padding: 5px 10px;
+        }
+        
+        input[list="typeOfTask"]{
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            background-color: #EEEEEE;
+        }
+        input[list="typeOfTask"]:focus{
+            border:2px var(--dark-color-b) solid;
+        }
+        
+    </style>
+
+<section id='challenges'>
+    <div>
+        <h1 style='font-size: 30px; color: #EEEEEE;'><i class="fas fa-heartbeat" style='margin-right:10px;color:#00C1D4;'></i>ChatHealth Challenges</h1>
+    <p style='color: #EEEEEE;margin-top:10px;'>Here are some challenges you can take on to improve your mental health! <br>
+        Keep yourself occupied and get your mind off whatever it is you're struggling with with these activities :)<br><br>
+        Choose a type below to get a challenge.
+    </p>
+    <form>
+        <label style='color: #EEEEEE;'>Choose by Type</label>
+        <input list="typeOfTask" oninput="chooseByType(this.value)" id="typeInput">
+
+        <datalist id="typeOfTask">
+            <option value="charity">
+            <option value="recreational">
+            <option value="busywork">
+            <option value="education">
+            <option value="relaxation">
+            <option value="social">
+            <option value="cooking">
+            <option value="diy">
+            <option value="music">
+        </datalist>
+    </form>
+    <div class="card">
+        <h1 id='task'></h1>
+        <p>Type of task: <span id='type'></span></p>
+        <p>Number of People needed: <span id='participants'></span></p>
+        <p>Accessibility: <span id='accessibility'></span></p>
+    </div>
+    </div>
+</section>
+
+    <!-- section for other options -->
+    <div id="menu"  onclick="openMenu()">
+        <i class="fas fa-ellipsis-v" id="mainMenu"></i>
+        <div id="menuContainer">
+          <a href="challenge.html" class="tooltip"
+            ><i id="challenge" class="fas fa-feather-alt menuOptions"></i>
+            <span class="tooltiptext">Challenges</span></a
+          >
+          <a href="index.html" class="tooltip"
+            ><i id="chat" class="far fa-comments menuOptions"></i
+          ><span class="tooltiptext">Chat Annonymously</span></a>
+  
+          <div class="tooltip"><i id="helplines" class="fas fa-comment-medical menuOptions"></i><span class="tooltiptext">Helplines</span></div>
+          <div class="tooltip"><i id="about" class="fas fas fa-heartbeat menuOptions"></i><span class="tooltiptext">About Us</span></div>
+        </div>
+
+        
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Helplines - Singapore</h2>
+          </div>
+          <div class="modal-body">
+            <p>National Care Hotline: 1800-202-6868 
+      (8am-12am daily, from 1 Sep 2020)
+            <ol style='margin-left: 10px;line-height: 1.6;margin:20px;'>
+                <li>Mental Well-being</li>
+                <ul>
+                    <li>Institute of Mental Health’s Mental Health Helpline (6389-2222)</li>
+                    <li>Samaritans of Singapore (1800-221-4444)</li>
+                    <li>Silver Ribbon Singapore (6385-3714)</li>
+                </ul>
+                <li>Marital and Parenting Issues</li>
+                <ul>
+                    <li>Community Psychology Hub’s Online Counselling platform</li>
+                </ul>
+                <li>Violence or Abuse</li>
+                <ul>
+                    <li>Big Love Child Protection Specialist Centre (6445-0400)</li>
+                    <li>HEART @ Fei Yue Child Protection Specialist Centre (6819-9170)</li>
+                    <li>PAVE Integrated Services for Individual and Family Protection (6555-0390)</li>
+                    <li>Project StART (6476-1482)</li>
+                    <li>TRANS SAFE Centre (6449-9088)</li>
+                </ul>
+                <li>Councelling</li>
+                <ul>
+                    <li>TOUCHline (Counselling) – 1800 377 2252</li>
+                </ul>
+            </ol>
+            A useful chatbot: <a href='https://www.ncss.gov.sg/our-initiatives/beyond-the-label/belle-beyond-the-label-helpbot#'>Belle Chatbot</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>About Us</h2>
+          </div>
+          <div class="modal-body">
+            <p>ChatHealth was created to bring help people struggling with mental health issues or even people struggling with managing their emotional/mental well-being in general. We do this by allowing users to chat freely with other users on this webapp , allowing users to rant anonymously when they are not comfortable talking to their loved ones about it, or also talk to others about topics of interest to boost their mood.
+                There are also additional Challenges that users can take on to keep themselves occupied or even allow them to find new interests.                
+                <br><br>
+                For more details and future updates, feel free to visit our github repo <a href="" target="_blank">here</a>
+                <br><br>
+                ChatHealth is an <a href='' target="_blank">open-source project</a> built by <a href='https://jolenechong.github.io' target="_blank">Jolene</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="js/main.js"></script>
+    <script>
+        // FOR MODAL ON MENU (HELPLINES)
+        var displayHelp = document.getElementById("myModal");
+        var openHelp = document.getElementById("helplines");
+        var closeHelp = document.getElementsByClassName("close")[0];
+
+        openHelp.onclick = function() {
+            displayHelp.style.display = "block";
+        }
+
+        closeHelp.onclick = function() {
+            displayHelp.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it (for both modals)
+        window.onclick = function(event) {
+        if (event.target == displayHelp) {
+            displayHelp.style.display = "none";
+        }
+        else if(event.target == openAbout) {
+            openAbout.style.display = "none";
+        }
+        }
+
+        
+        // FOR MODAL ON MENU (ABOUT)
+        var openAbout = document.getElementById("myModal1");
+        var about = document.getElementById("about");
+        var closeAbout = document.getElementsByClassName("close")[1];
+
+        about.onclick = function() {
+            openAbout.style.display = "block";
+        }
+
+        closeAbout.onclick = function() {
+            openAbout.style.display = "none";
+        }
+
+
+        //FOR CHALLENGES CARDS
+        document.querySelector('.card').style.display = "none"
+
+        // get data from bored api
+        function getTask() {
+            document.getElementById('task').innerHTML = "LOADING"
+            fetch('https://www.boredapi.com/api/activity/')
+                .then(response => response.json())
+                .then(function(data) {
+                    console.log(data);
+                    document.getElementById('task').innerHTML = data.activity
+                    document.getElementById('type').innerHTML = data.type
+                    document.getElementById('participants').innerHTML = data.participants
+                    document.getElementById('accessibility').innerHTML = data.accessibility
+                })
+        }
+
+        function chooseByType(type) {
+            // https://www.boredapi.com/api/activity?type=charity
+            document.querySelector('.card').style.display = ""
+
+            document.getElementById('task').innerHTML = "LOADING"
+            fetch('https://www.boredapi.com/api/activity?type='+type)
+                .then(response => response.json())
+                .then(function(data) {
+                    console.log(data);
+                    document.getElementById('task').innerHTML = data.activity
+                    document.getElementById('type').innerHTML = data.type
+                    document.getElementById('participants').innerHTML = data.participants
+                    document.getElementById('accessibility').innerHTML = data.accessibility
+                })
+
+        }
+
+        const generateHtml = (data) => {
+            document.getElementById('task').innerHTML = data.activity
+        }
+        
+
+    </script>
+</body>
+</html>
