@@ -19,6 +19,9 @@ Go to localhost:3000
 - Vanila Javascript
 - [Third Party API](https://www.boredapi.com/) for the challenge page and [Socket.io](https://socket.io/) for real-time event based communication
 
+## Main Features
+<img src="chatHealthFeatures.png" alt='ChatHealth Features'/>
+
 ## How it works
 <img src='chatHealthChallenges1.png' alt='Chat room options'/>
 <br>
