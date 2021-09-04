@@ -25,7 +25,7 @@ Go to localhost:3000
 - Users can navigate between rooms easily
 - Join chats with any name you like!
 <br><br>
-<img src='chatHealth1' alt='Challenges'>
+<img src='chatHealth1.png' alt='Challenges'>
 <br>
 - Users can choose a type of challenge and get a challenge back
 - Challenges range from simple things like organising your room to starting a blog or learning a new language
