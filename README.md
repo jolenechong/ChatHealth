@@ -3,6 +3,7 @@ Full-stack Realtime chat app with websockets using Node.js, Express and Socket.i
 <br><br>
 Live site: https://chat-health.herokuapp.com/ <br>
 Source Code: https://github.com/jolenechong/ChatHealth <br>
+Devpost Submission/Demo Video/Pitch: https://devpost.com/software/chathealth<br>
 
 <img src='chatHealth.png' alt="screenshot of ChatHealth website"/>
 
