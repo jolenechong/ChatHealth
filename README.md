@@ -1,7 +1,7 @@
 # ChatHealth WebApp
 Realtime chat app with websockets using Node.js, Express and Socket.io with Vanilla JS on the frontend with third-party API for challenges, an app built for mental health. Made for a 24-hour overnight hackathon [MindFulHacks](https://mindfulhacks.devpost.com/), the first student-led mental health focused  hackathon in Singapore. Won 9th place as a 1 person team, with 42+ other teams.
 <br><br>
-Date: September 2021
+Date: September 2021 <br>
 Live site: https://chat-health.herokuapp.com/ <br>
 Source Code: https://github.com/jolenechong/ChatHealth <br>
 Devpost Submission/Demo Video/Pitch: https://devpost.com/software/chathealth<br>
