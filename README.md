@@ -18,7 +18,7 @@ Go to localhost:3000
 
 ## Tech Stack
 - NodeJS, Express
-- Vanila Javascript
+- Javascript
 - [Third Party API](https://www.boredapi.com/) for the challenge page and [Socket.io](https://socket.io/) for real-time event based communication
 
 ## Main Features
