@@ -9,6 +9,10 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+app.get('/test', (req, res) => {
+    return res.send('Hello World');
+});
+
 //static folder
 app.use(express.static(path.join(__dirname, "public")));
 

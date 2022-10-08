@@ -6,9 +6,9 @@
   },
   "description": "Realtime chat app for Mental Health",
   "scripts": {
-    "start": "node server.js",
-    "build": "npm install",
-    "dev": "node server"
+    "production": "node server.js",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install",
+    "dev": "nodemon server"
   },
   "author": "Jolene",
   "license": "MIT",
