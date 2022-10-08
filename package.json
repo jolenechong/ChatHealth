@@ -4,10 +4,11 @@
   "engines": {
     "node": "14.17.0"
   },
-  "description": "Realtime chap app for Mental Health",
+  "description": "Realtime chat app for Mental Health",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server"
+    "build": "npm install",
+    "dev": "node server"
   },
   "author": "Jolene",
   "license": "MIT",

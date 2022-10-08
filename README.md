@@ -6,7 +6,7 @@ Live site: https://chat-health.herokuapp.com/ <br>
 Source Code: https://github.com/jolenechong/ChatHealth <br>
 Devpost Submission/Demo Video/Pitch: https://devpost.com/software/chathealth<br>
 
-<img src='chatHealth.png' alt="screenshot of ChatHealth website"/>
+<img src='assets/chatHealth.png' alt="screenshot of ChatHealth website"/>
 
 ## Usage
 ```
@@ -22,15 +22,15 @@ Go to localhost:3000
 - [Third Party API](https://www.boredapi.com/) for the challenge page and [Socket.io](https://socket.io/) for real-time event based communication
 
 ## Main Features
-<img src="chatHealthFeatures.png" alt='ChatHealth Features'/>
+<img src="assets/chatHealthFeatures.png" alt='ChatHealth Features'/>
 
 ## How it works
-<img src='chatHealthChallenges1.png' alt='Chat room options'/>
+<img src='assets/chatHealthChallenges1.png' alt='Chat room options'/>
 <br>
 - Users can navigate between rooms easily <br>
 - Join chats with any name you like!
 <br><br>
-<img src='chatHealth1.png' alt='Challenges Page'/>
+<img src='assets/chatHealth1.png' alt='Challenges Page'/>
 <br>
 - Users can choose a type of challenge and get a challenge back <br>
 - Challenges range from simple things like organising your room to starting a blog or learning a new language <br>
