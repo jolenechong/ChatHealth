@@ -5,7 +5,10 @@ Date: September 2021 <br>
 Live site: https://chathealth.onrender.com <br>
 Source Code: https://github.com/jolenechong/ChatHealth <br>
 
-<img src='assets/chatHealth.png' alt="screenshot of ChatHealth website"/>
+Here's a quick demo on the chat features of the app and how it works, along with the API integration and all the other pages of the web app.<br/>
+
+![Demo of the App](assets/chatHealthDemo.gif)
+<br/><br/>
 
 ## Usage
 ```
@@ -21,6 +24,8 @@ Go to http://localhost:3000
 - [Third Party API](https://www.boredapi.com/) for the challenge page and [Socket.io](https://socket.io/) for real-time event based communication
 
 ## Main Features
+<img src='assets/chatHealth.png' alt="screenshot of ChatHealth website"/>
+<br/><br/>
 <img src="assets/chatHealthFeatures.png" alt='ChatHealth Features'/>
 
 ## How it works
